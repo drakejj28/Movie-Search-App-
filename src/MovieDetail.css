@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  animation: 3s ease-out 0s 1 slideInFromLeft;
+}
+
+.title {
+  font-size: 8rem;
+  margin: 20px 0;
+  text-align: center;
+  font-family: "League Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: maroon;
+  opacity: 85%;
+}
+
+.overview {
+  font-size: 2rem;
+  margin: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: darkgray;
+}
+
+.poster-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.poster {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.poster:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+  
